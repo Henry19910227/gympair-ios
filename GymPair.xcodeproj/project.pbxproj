@@ -24,6 +24,7 @@
 		BA82C8CC2564181800BEAFE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA82C8CA2564181800BEAFE5 /* LaunchScreen.storyboard */; };
 		BA82C8D72564181900BEAFE5 /* GymPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82C8D62564181900BEAFE5 /* GymPairTests.swift */; };
 		BA82C8E22564181900BEAFE5 /* GymPairUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82C8E12564181900BEAFE5 /* GymPairUITests.swift */; };
+		C77A25202565522400FCFA8D /* GPLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A251F2565522400FCFA8D /* GPLoginViewModel.swift */; };
 		D81EE23876398930760B3C71 /* Pods_GymPairTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2578598F18F2F0367F67AD94 /* Pods_GymPairTests.framework */; };
 		E819F78CCC1E82BBBB85AE19 /* Pods_GymPair_GymPairUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C4F61D48CCFF83739DE57 /* Pods_GymPair_GymPairUITests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		BA82C8DD2564181900BEAFE5 /* GymPairUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymPairUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA82C8E12564181900BEAFE5 /* GymPairUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymPairUITests.swift; sourceTree = "<group>"; };
 		BA82C8E32564181900BEAFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77A251F2565522400FCFA8D /* GPLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPLoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				BA353DE625644B8F00CC4917 /* Controller */,
+				C77A251B256551F300FCFA8D /* ViewModel */,
 				BA353E00256450C800CC4917 /* Navigator */,
 				BA353DFA25644F0A00CC4917 /* View */,
 			);
@@ -286,6 +289,14 @@
 				BA82C8C52564181600BEAFE5 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C77A251B256551F300FCFA8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C77A251F2565522400FCFA8D /* GPLoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +547,7 @@
 				BA353DE1256447E900CC4917 /* URLProtocol.swift in Sources */,
 				BA82C8C02564181600BEAFE5 /* AppDelegate.swift in Sources */,
 				BA353DF025644BF900CC4917 /* GPNavigator.swift in Sources */,
+				C77A25202565522400FCFA8D /* GPLoginViewModel.swift in Sources */,
 				BA82C8C22564181600BEAFE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

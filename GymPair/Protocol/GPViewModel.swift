@@ -7,6 +7,8 @@
 
 import UIKit
 
-class GPViewModel: NSObject {
-
+protocol GPViewModel {
+    associatedtype Input
+    associatedtype Output
+    func transform(input: Input) -> Output
 }
