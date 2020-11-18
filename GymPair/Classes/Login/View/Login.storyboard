@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,20 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-92-ram">
-                                <rect key="frame" x="159" y="230" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yTQ-92-ram">
+                                <rect key="frame" x="20" y="194" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="a6c-xM-CdG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpN-WQ-GBu">
-                                <rect key="frame" x="192" y="459" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="登入"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpN-WQ-GBu">
+                                <rect key="frame" x="20" y="289" width="374" height="45"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ztU-uY-xhK"/>
+                                </constraints>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="68E-fP-G7q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yTQ-92-ram" firstAttribute="leading" secondItem="68E-fP-G7q" secondAttribute="leading" constant="20" id="52v-TT-kFY"/>
+                            <constraint firstItem="yTQ-92-ram" firstAttribute="top" secondItem="68E-fP-G7q" secondAttribute="top" constant="150" id="D8b-eR-rZR"/>
+                            <constraint firstItem="wpN-WQ-GBu" firstAttribute="leading" secondItem="68E-fP-G7q" secondAttribute="leading" constant="20" id="FJz-eQ-WrS"/>
+                            <constraint firstItem="68E-fP-G7q" firstAttribute="trailing" secondItem="yTQ-92-ram" secondAttribute="trailing" constant="20" id="HIo-ni-VDr"/>
+                            <constraint firstItem="68E-fP-G7q" firstAttribute="trailing" secondItem="wpN-WQ-GBu" secondAttribute="trailing" constant="20" id="VRj-WF-Qrj"/>
+                            <constraint firstItem="yTQ-92-ram" firstAttribute="centerX" secondItem="68E-fP-G7q" secondAttribute="centerX" id="aXM-TO-2GK"/>
+                            <constraint firstItem="wpN-WQ-GBu" firstAttribute="top" secondItem="yTQ-92-ram" secondAttribute="bottom" constant="50" id="hbs-qv-XXg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBs-eB-Umi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -38,6 +55,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

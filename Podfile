@@ -15,6 +15,7 @@ target 'GymPair' do
   pod 'SDWebImage'
   pod 'JGProgressHUD'
   pod 'IQKeyboardManagerSwift'
+  pod 'SwiftCentrifuge'
 
   target 'GymPairTests' do
     inherit! :search_paths
