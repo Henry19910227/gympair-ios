@@ -134,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				BA353DAC2564445D00CC4917 /* Application */,
+				C77A250325651D7A00FCFA8D /* Main */,
 				BA353DE525644B7800CC4917 /* Login */,
 			);
 			path = Classes;
@@ -246,7 +247,6 @@
 				BA353DAE2564451300CC4917 /* API */,
 				BA353DAB256443FA00CC4917 /* Classes */,
 				BA82C8C32564181600BEAFE5 /* ViewController.swift */,
-				BA82C8C52564181600BEAFE5 /* Main.storyboard */,
 				BA82C8C82564181800BEAFE5 /* Assets.xcassets */,
 				BA82C8CA2564181800BEAFE5 /* LaunchScreen.storyboard */,
 				BA82C8CD2564181800BEAFE5 /* Info.plist */,
@@ -270,6 +270,22 @@
 				BA82C8E32564181900BEAFE5 /* Info.plist */,
 			);
 			path = GymPairUITests;
+			sourceTree = "<group>";
+		};
+		C77A250325651D7A00FCFA8D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C77A250425651D8E00FCFA8D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C77A250425651D8E00FCFA8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA82C8C52564181600BEAFE5 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
